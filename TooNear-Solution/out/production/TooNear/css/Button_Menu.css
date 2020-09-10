@@ -1,0 +1,33 @@
+
+#paneTo .buttonTo {
+    -fx-background-color : #FFFFFF;
+    -fx-background-radius : 0px 5px 5px 0px;
+    -fx-opacity : 0.4;
+}
+
+#paneTo .txt {
+    -fx-opacity : 0.6;	
+}
+
+#paneTo .img {
+     -fx-opacity : 0.6;		
+}
+
+#paneTo:hover .buttonTo {
+    -fx-background-color : #8A25B1;
+    -fx-opacity : 1;
+}
+
+#paneTo:hover .txt {
+     -fx-opacity : 1;			
+}
+
+#paneTo:hover .img {
+     -fx-opacity : 1;	
+}
+
+#paneToActive .buttonTo {
+    -fx-background-color : #8A25B1;
+    -fx-pref-width : 154px;
+    -fx-background-radius : 0px 5px 5px 0px;
+}
