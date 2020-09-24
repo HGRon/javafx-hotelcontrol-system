@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="670.0" maxWidth="1146.0" minHeight="670.0" minWidth="1146.0" prefHeight="670.0" prefWidth="1146.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SubMenuReserva">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane id="paneSubmenuRegistroTo" fx:id="buttonAgendar" onMouseClicked="#abrirTelaAgendar" prefHeight="40.0" prefWidth="224.0" stylesheets="@../css/Button_Menu.css">
+               <children>
+                  <Text fill="WHITE" layoutX="72.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="AGENDAR">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                     <image>
+                        <Image url="@../img/IconSubReserva.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane id="paneSubmenuRegistroTo" fx:id="buttonCheckIn" layoutX="234.0" onMouseClicked="#abrirTelaCheckIn" prefHeight="40.0" prefWidth="224.0" stylesheets="@../css/Button_Menu.css">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                     <image>
+                        <Image url="@../img/IconCheckIn.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="74.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="CHECK IN">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane id="paneSubmenuRegistroTo" fx:id="buttonCheckOut" layoutX="468.0" onMouseClicked="#abrirTelaCheckOut" prefHeight="40.0" prefWidth="224.0" stylesheets="@../css/Button_Menu.css">
+               <children>
+                  <Text fill="WHITE" layoutX="66.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="CHECK OUT">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                     <image>
+                        <Image url="@../img/IconCheckOut.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="rootPane" maxHeight="610.0" maxWidth="1146.0" minHeight="610.0" minWidth="1146.0" prefHeight="610.0" prefWidth="1146.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+   </children>
+</AnchorPane>

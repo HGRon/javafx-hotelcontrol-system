@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="610.0" maxWidth="1146.0" minHeight="610.0" minWidth="1146.0" prefHeight="610.0" prefWidth="1146.0" style="-fx-background-color: #3E305C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Reserva">
+   <children>
+      <GridPane maxWidth="305.0" minWidth="305.0" prefHeight="305.0" style="-fx-background-color: #33333D; -fx-background-radius: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="66.0" minHeight="66.0" prefHeight="66.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="159.0" minHeight="159.0" prefHeight="159.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="250.0" minHeight="260.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="14.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="141.0" prefWidth="141.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="5.0" minWidth="5.0" prefWidth="5.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="141.0" prefWidth="141.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane maxHeight="66.0" maxWidth="141.0" minHeight="66.0" minWidth="141.0" prefHeight="66.0" prefWidth="141.0" style="-fx-background-color: #960951; -fx-background-radius: 10 0 0 10;" GridPane.columnIndex="1">
+                     <children>
+                        <Label layoutX="14.0" layoutY="7.0" text="CHECK IN" textFill="WHITE">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="8.0" layoutY="33.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #960951;" styleClass="textField" stylesheets="@../css/Geral.css">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                     </children>
+                  </Pane>
+                  <Pane maxHeight="66.0" maxWidth="141.0" minHeight="66.0" minWidth="141.0" prefHeight="66.0" prefWidth="141.0" style="-fx-background-color: #960951; -fx-background-radius: 0 10 10 0;" GridPane.columnIndex="3">
+                     <children>
+                        <Label layoutX="9.0" layoutY="5.0" text="CHECK OUT" textFill="WHITE">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="8.0" layoutY="33.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #960951;" styleClass="textField" stylesheets="@../css/Geral.css" />
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="3">
+              <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="9.0" minWidth="9.0" prefWidth="9.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="287.0" minWidth="287.0" prefWidth="287.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="9.0" minWidth="9.0" prefWidth="9.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="23.0" minHeight="23.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="16.0" minHeight="16.0" prefHeight="16.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="21.0" minHeight="21.0" prefHeight="21.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="32.0" minHeight="32.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="23.0" prefWidth="287.0" style="-fx-background-color: #4A0C2C; -fx-background-radius: 10 10 0 0;" GridPane.columnIndex="1">
+                     <children>
+                        <Label layoutX="98.0" layoutY="3.0" text="CAPACIDADE" textFill="WHITE">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951;" stylesheets="@../css/Geral.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label layoutX="14.0" layoutY="9.0" text="ADULTO" textFill="WHITE">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="134.0" prefHeight="32.0" prefWidth="125.0">
+                           <children>
+                              <Button fx:id="buttonMaisAdulto" maxHeight="32.0" maxWidth="30.0" minHeight="32.0" minWidth="30.0" mnemonicParsing="false" onAction="#maisAdulto" prefHeight="32.0" prefWidth="30.0" style="-fx-background-radius: 10 0 0 10;" styleClass="buttonAdd">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/IconMais.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Button fx:id="buttonMenosAdulto" layoutX="95.0" maxHeight="32.0" maxWidth="30.0" minHeight="32.0" minWidth="30.0" mnemonicParsing="false" onAction="#menosAdulto" prefHeight="32.0" prefWidth="30.0" style="-fx-background-radius: 0 10 10 0;" styleClass="buttonAdd">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/IconMenos.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Label fx:id="labelQtdAdulto" alignment="CENTER" layoutX="32.5" maxHeight="32.0" minHeight="32.0" prefHeight="32.0" prefWidth="60.0" style="-fx-background-color: #1B1D23;" text="0" textAlignment="CENTER" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951;" stylesheets="@../css/Geral.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Label layoutX="14.0" layoutY="7.0" text="CRIANÇA" textFill="WHITE">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="134.0" prefHeight="32.0" prefWidth="125.0">
+                           <children>
+                              <Button fx:id="buttonMaisCrianca" maxHeight="32.0" maxWidth="30.0" minHeight="32.0" minWidth="30.0" mnemonicParsing="false" onAction="#maisCrianca" prefHeight="32.0" prefWidth="30.0" style="-fx-background-radius: 10 0 0 10;" styleClass="buttonAdd">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/IconMais.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="buttonMenosCrianca" layoutX="95.0" maxHeight="32.0" maxWidth="30.0" minHeight="32.0" minWidth="30.0" mnemonicParsing="false" onAction="#menosCrianca" prefHeight="32.0" prefWidth="30.0" style="-fx-background-radius: 0 10 10 0;" styleClass="buttonAdd">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/IconMenos.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label fx:id="labelQtdCrianca" alignment="CENTER" layoutX="32.5" maxHeight="32.0" minHeight="32.0" prefHeight="32.0" prefWidth="60.0" style="-fx-background-color: #1B1D23;" text="0" textAlignment="CENTER" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951; -fx-background-radius: 0 0 10 10;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Label layoutX="14.0" layoutY="-7.0" text="(ATE DOZE ANOS)" textFill="WHITE">
+                           <font>
+                              <Font name="DejaVu Sans ExtraLight" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="5">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="9.0" minWidth="9.0" prefWidth="9.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="9.0" minWidth="9.0" prefWidth="9.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Pane prefHeight="23.0" prefWidth="287.0" style="-fx-background-color: #4A0C2C; -fx-background-radius: 10 10 0 0;" GridPane.columnIndex="1">
+                     <children>
+                        <Label layoutX="111.0" layoutY="5.0" text="VALORES" textFill="WHITE">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="valorQuarto" layoutX="14.0" layoutY="14.0" text="R$ 00000.00" textFill="WHITE">
+                           <font>
+                              <Font name="DejaVu Sans Condensed Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="38.0" text="Por Noite" textFill="WHITE">
+                           <font>
+                              <Font name="DejaVu Sans ExtraLight" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #960951; -fx-background-radius: 0 0 10 10;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="290.0" style="-fx-background-radius: 10;" styleClass="buttonCancelar" stylesheets="@../css/Geral.css" text="RESERVAR" textFill="WHITE" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Droid Sans Fallback" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <TableView id="table-view" fx:id="tabelaPrincipal" layoutX="313.0" layoutY="51.0" maxHeight="610.0" maxWidth="1125.0" minHeight="273.0" onMouseClicked="#pegarInformacoes" prefHeight="559.0" prefWidth="832.0" style="-fx-background-color: #33333D;" stylesheets="@../css/TableView_Registro.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="36.0">
+         <columns>
+            <TableColumn fx:id="tabelaPane" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" resizable="false" styleClass="paneClass" />
+            <TableColumn fx:id="tabelaAndar" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" resizable="false" styleClass="andarClass" />
+            <TableColumn fx:id="tabelaNumero" maxWidth="80.0" minWidth="80.0" resizable="false" styleClass="numeroClass" />
+            <TableColumn fx:id="tabelaValor" maxWidth="960.0" minWidth="-1.0" prefWidth="650.0" resizable="false" styleClass="valorClass" />
+            <TableColumn fx:id="tabelaIcone" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" styleClass="iconeClass" />
+         </columns>
+      </TableView>
+      <Pane layoutX="314.0" layoutY="-71.0" maxHeight="36.0" minHeight="36.0" prefHeight="36.0" prefWidth="832.0" style="-fx-background-color: #232329; -fx-background-radius: 10 10 0 0;" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUARTOS DISPONIVEIS ">
+               <font>
+                  <Font name="DejaVu Sans ExtraLight" size="14.0" />
+               </font>
+            </Text>
+         </children></Pane>
+   </children>
+</AnchorPane>

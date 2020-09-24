@@ -1,0 +1,106 @@
+.textField {
+    -fx-font-family: "DejaVu Sans Condensed";
+    -fx-font-size: 12;
+    -fx-padding: 5,1,1,1;
+    -fx-border: gone;
+    -fx-text-fill: white;
+}
+
+.choiceBox .context-menu {
+    -fx-background-color: #1B1D23;
+}
+
+.choiceBox .menu-item:focused {
+    -fx-background-color: #8A25B1;
+}
+
+.choiceBox .menu-item > .label {
+    -fx-text-fill: white;
+}
+
+.choiceBox .menu-item:focused > .label {
+    -fx-text-fill: white;
+}
+
+.choiceBox {
+  -fx-background-color: #1B1D23;
+  -fx-mark-color: white; // arrow color
+  -fx-background-radius: 10 10 0 0;
+}
+.choice-box > .label { -fx-text-fill: white; }
+
+.buttonFiltro {
+    -fx-background-color: #343B48;
+}
+
+.buttonFiltro:hover {
+    -fx-background-color: #484B51;
+}
+
+.buttonFiltro:pressed {
+    -fx-background-color: #343B48;
+}
+
+.paneImageLoadRegistroQuarto {
+   -fx-background-image: url("../img/backgroundTelaDeRegistro.jpg");
+}
+
+.textFildToRegistro {
+    -fx-background-color: white;
+    -fx-background-insets: 24.7 0 0 0;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 12;
+}
+.textFildToRegistro:focused {
+    -fx-background-color: #E31982;
+}
+
+.buttonCancelar {
+    -fx-background-color: #B22222;
+}
+
+.buttonCancelar:hover {
+    -fx-background-color: #D61F15;
+}
+
+.buttonCancelar:pressed {
+    -fx-background-color: #B22222;
+}
+
+.buttonConfirmar {
+    -fx-background-color:  #1B1D23;
+}
+
+.buttonConfirmar:hover {
+    -fx-background-color: #484B51;
+}
+
+.buttonConfirmar:pressed {
+    -fx-background-color:  #1B1D23;
+}
+
+.buttonMenssagem {
+    -fx-background-color:   #B22222;
+}
+
+.buttonMenssagem:hover {
+    -fx-background-color: #D61F15;
+}
+
+.buttonMenssagem:pressed {
+    -fx-background-color:   #B22222;
+}
+
+.buttonAdd {
+    -fx-background-color: #1B1D23;
+}
+
+.buttonAdd:hover {
+    -fx-background-color: #303030;
+}
+
+.buttonAdd:pressed {
+    -fx-background-color:  #1B1D23;
+}
