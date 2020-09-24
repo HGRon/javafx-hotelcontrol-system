@@ -1,0 +1,89 @@
+.table-view .scroll-bar:horizontal {
+    -fx-pref-height : 0;
+}
+
+#table-view .scroll-bar:vertical {
+     -fx-pref-width : 10;
+     -fx-background-color: #383841;
+}
+
+table-view .scroll-bar:vertical .track {
+      -fx-pref-height : 5;
+      -fx-background-color: #33333D;
+}
+
+#table-view-disable .scroll-bar:vertical {
+     -fx-pref-width : 0;
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #E31982;
+    -fx-background-insets: 2, 0, 0;
+}
+
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color: #33333D;
+    -fx-opacity : 0;
+    -fx-pref-height: 1;
+}
+
+/*/////////////////////////////////////////////*/
+
+.table-view .column-header-background{
+    -fx-pref-height : 0;
+    -fx-max-height : 0;
+    -fx-min-height : 0;
+}
+
+/*/////////////////////////////////////////////*/
+
+.table-view .cell:selected {
+    -fx-background-color: #682B52;
+}
+
+.table-view .cell{
+  -fx-background-color: transparent;
+  -fx-border-width: 0;
+  -fx-text-fill: lightgray;
+}
+
+.table-viw .row {
+    -fx-border-width: 10;
+    -fx-text-fill: #FFFFFF;
+}
+.table-view .paneClass {
+    -fx-background-color: #E31982;
+    -fx-background-radius: 5;
+    -fx-background-insets:  3 10 3 5;
+}
+
+.table-view .andarClass {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-font-size: 18;
+}
+
+.table-view .numeroClass {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 18;
+}
+
+.table-view .valorClass {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-font-size: 25;
+}
+
+.table-view .iconeClass {
+    -fx-background-image: url("../img/IconDinheiro.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 30px;
+    -fx-background-position: center;
+}
+
+/*/////////////////////////////////////////////*/
+

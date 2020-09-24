@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="670.0" maxWidth="1146.0" minHeight="670.0" minWidth="1146.0" prefHeight="670.0" prefWidth="1146.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuRegistro">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="40.0" prefWidth="224.0" style="-fx-background-color: #0CC7A7; -fx-background-radius: 0 0 10 10;">
+               <children>
+                  <Text fill="WHITE" layoutX="45.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRAR QUARTO">
+                     <font>
+                        <Font name="DejaVu Sans Condensed Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/IconSubCadastro.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </Pane>
+      <Pane layoutY="50.0" prefHeight="30.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Pane layoutX="950.0" prefHeight="30.0" prefWidth="182.0">
+               <children>
+                  <ChoiceBox fx:id="choiceBox" layoutX="-32.0" layoutY="1.0" prefHeight="30.0" prefWidth="182.0" styleClass="choiceBox" stylesheets="@../css/Geral.css">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </ChoiceBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="886.0" layoutY="80.0" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #232329; -fx-background-radius: 10 10 0 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AREA DE FILTRO">
+               <font>
+                  <Font name="KacstTitle" size="18.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <GridPane layoutY="115.0" prefHeight="50.0" prefWidth="577.0" style="-fx-background-color: #33333D;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="8.0" minWidth="8.0" prefWidth="8.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="966.0" prefWidth="966.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="8.0" minWidth="8.0" prefWidth="8.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="8.0" minWidth="8.0" prefWidth="8.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="10.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="buttonFiltro" maxHeight="30.0" minHeight="30.0" mnemonicParsing="false" onAction="#filtrarQuartos" prefHeight="30.0" prefWidth="150.0" styleClass="buttonFiltro" stylesheets="@../css/Geral.css" text="FILTRAR" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="DejaVu Sans Condensed Bold" size="18.0" />
+               </font></Button>
+            <TextField fx:id="coteudoTextFild" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" promptText="DIGITE AQUI SEU FILTRO" style="-fx-background-color: #1B1D23; -fx-background-radius: 5 5 5 5;" styleClass="textField" stylesheets="@../css/Geral.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Pane layoutY="191.0" prefHeight="515.0" prefWidth="1146.0" style="-fx-background-color: #33333D; -fx-background-radius: 0 0 10 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="190.0">
+         <children>
+            <TableView id="table-view" fx:id="tabelaPrincipal" layoutX="10.0" layoutY="10.0" maxHeight="464.0" maxWidth="1125.0" minHeight="273.0" minWidth="1125.0" onKeyPressed="#deleteItem" onMouseClicked="#tableToEdit" prefHeight="464.0" prefWidth="1125.0" style="-fx-background-color: #33333D;" stylesheets="@../css/TableView_Registro.css">
+              <columns>
+                <TableColumn fx:id="tabelaPane" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" resizable="false" styleClass="paneClass" />
+                  <TableColumn fx:id="tabelaAndar" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" resizable="false" styleClass="andarClass" />
+                  <TableColumn fx:id="tabelaNumero" maxWidth="80.0" minWidth="80.0" resizable="false" styleClass="numeroClass" />
+                  <TableColumn fx:id="tabelaValor" maxWidth="960.0" minWidth="-1.0" prefWidth="960.0" resizable="false" styleClass="valorClass" />
+                  <TableColumn fx:id="tabelaIcone" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" styleClass="iconeClass" />
+              </columns>
+            </TableView>
+         </children></Pane>
+      <Button fx:id="buttonRegistrarQuarto" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#abrirTelaDeCadastro" prefHeight="40.0" prefWidth="40.0" styleClass="Botao_RegistrarQuarto" stylesheets="@../css/Botao_Flutuante.css" AnchorPane.bottomAnchor="-2.0" AnchorPane.rightAnchor="10.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/IconMais.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="buttonEditarQuarto" layoutX="10.0" layoutY="10.0" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" mnemonicParsing="false" onAction="#abrirTelaDeEdicao" prefHeight="40.0" prefWidth="40.0" styleClass="Botao_RegistrarQuarto" stylesheets="@../css/Botao_Flutuante.css" AnchorPane.bottomAnchor="-2.0" AnchorPane.rightAnchor="55.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/IconEditar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
