@@ -31,3 +31,35 @@
     -fx-pref-width : 154px;
     -fx-background-radius : 0px 5px 5px 0px;
 }
+
+//////////SUBMENUBUTTON REGISTRO//////////////////
+
+#paneSubmenuRegistroTo {
+     -fx-background-color : #C4C4C4;
+     -fx-background-radius : 0px 0px 10px 10px;
+}
+
+#paneSubmenuRegistroTo .txt {
+     -fx-opacity : 0.6;
+}
+
+#paneSubmenuRegistroTo .img {
+     -fx-opacity : 0.6;
+}
+
+#paneSubmenuRegistroTo:hover .txt {
+     -fx-opacity : 1;
+}
+
+#paneSubmenuRegistroTo:hover .img {
+     -fx-opacity : 1;
+}
+
+#paneSubmenuRegistroToActive {
+    -fx-background-color :  #E3CB19;
+    -fx-background-radius : 0px 0px 10px 10px;
+}
+
+
+
+
